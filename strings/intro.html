@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Introduction</title>
+</head>
+<body>
+<script>
+    let insertWord = "world";
+    let example2 = "Example";
+    let example = `Hello ${insertWord}`; //string interpolation in javascript
+
+    let arrayString = ['test1', 'test2'];
+    let pattern = 'ABCDEFGHIJKLabcdefghijklmnopqrstuvwxyz';
+    let regx = /[A-E]/gi;
+//    console.log(example);
+//    console.log(example.length);
+//    console.log(example.charAt(10));
+//    console.log(example.concat(example2, 'Works!', ...arrayString)); // same as example1 + example2
+//    console.log(example.endsWith('wor', example.length - 2)); //return true/flase and takes string as an input
+    console.log(example.indexOf('Ello')); //returns the first occurance of index value and case sensitive
+    console.log(example.includes('ello') > -1); // returns boolean value
+    console.log(example.lastIndexOf('l'));
+    console.log(example.lastIndexOf('l', 3));
+    console.log(pattern.match(regx)); //majorly used to find patterns uisng regular expressions
+
+</script>
+</body>
+</html>
